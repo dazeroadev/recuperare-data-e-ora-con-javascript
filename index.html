@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Data e Ora Correnti</title>
+	</head>
+
+	<body>
+		<h3>Informazioni sulla data e l'ora corrente</h3>
+		<div id="dateInfo"></div>
+
+		<script>
+			let dateInfo = document.getElementById("dateInfo");
+			const currentDate = new Date();
+
+			dateInfo.innerHTML = `Oggi è il ${currentDate.getDate()}/${currentDate.getMonth() + 1}/${currentDate.getFullYear()}. Sono le ore ${currentDate.getHours()}:${currentDate.getMinutes()}`;
+
+			// Stampare i millisecondi dal 1 Gennaio 1970
+			console.log(currentDate.getTime());
+
+			// Stampare il giorno corrente
+			console.log(currentDate.getDate());
+
+			// Stampare il mese corrente
+			console.log(currentDate.getMonth() + 1);
+
+			// Stampare l'anno corrente
+			console.log(currentDate.getFullYear());
+
+			// Stampare le ore correnti
+			console.log(currentDate.getHours());
+
+			// Stampare i minuti correnti
+			console.log(currentDate.getMinutes());
+		</script>
+	</body>
+
+</html>
